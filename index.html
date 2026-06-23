@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Growth Solutions | Elite Outsourced Sales & Lead Generation</title>
+<meta name="description" content="Apex Growth Solutions - Your trusted outsourced growth partner. Cold calling, lead generation, appointment setting, and sales support for solar, roofing, insurance, and real estate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=9MVGvQpBZT-oMjxC8Y2WrRYT8QAdErgf-PS5tW7J56MxKH0ZVCM9f_MDwv82rGt8yJb8JCURUtuOapvc_KEUOPcf7K1RMQb1O-LkKiATUzRwkkKEODIS5523zpkLrmI2VynFYQWDMNxI3IGtb4ApJ38SB4-zjaPWAp2yvKCdzU4Edhy4dWLhT-sgi5TIm-UyyME7lPMeryeFhc60itdJ-QCzkTfi72ViOr_MDt6dEFMUxl1Jzzt4nilbYGZnnamDA2RUaATg4cPL7tADaGfrVJgLe-1nCPuIheQq_oa5rumGnDWhko-iPEt-qNw9bvMrHgz0bzTG0stpIVT4pcI7oTMcac1ZmTveAP-vH7NtBQyHJ6Ix68WKorFfT55Bzn1dwBipTWCoi8DojcFxtqDqy_tBmgEYhSMPq-fjpAkF9oahbsOZdNeOFBO9WsgHxwugfQxClCnzNaiOqEEadhczSvuMWYJQCKENwpSnFoXrzBe_iIlArAqWwjbIJ1cJzkrp_80qJ383qZrkmELSw50fJSM9A_C41R9bksVEaEX-umUHoJ6Tmeqs7SqEFV5sj7q_IQAePbFTT_YxwgRrfeAnI2qRdOOtfWXwtGpjD5EdmQBUCaykAfEcO9k_iTIgoulTOqaP-mwcBX0hbXS_xmXcWw" charset="UTF-8"></script><style>
+/* ============================================
+   APEX GROWTH SOLUTIONS
+   OFFICIAL AGS BRAND GRADIENT:
+   #8B0000 → #D10000 → #FF4D4D
+   NO ORANGE. NO GENERIC RED. ONLY AGS GRADIENT.
+   ============================================ */
+
+:root {
+  --ags-dark: #8B0000;
+  --ags-mid: #D10000;
+  --ags-bright: #FF4D4D;
+  --ags-gradient: linear-gradient(135deg, #8B0000 0%, #D10000 50%, #FF4D4D 100%);
+  --ags-gradient-hover: linear-gradient(135deg, #A30000 0%, #E60000 50%, #FF6B6B 100%);
+  --ags-glow: rgba(209, 0, 0, 0.4);
+  --ags-glow-soft: rgba(209, 0, 0, 0.15);
+  --deep-black: #080808;
+  --section-black: #0C0C0C;
+  --card-bg: #111111;
+  --white: #FFFFFF;
+  --white-dim: rgba(255,255,255,0.7);
+  --glass: rgba(255,255,255,0.03);
+  --glass-border: rgba(139, 0, 0, 0.3);
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--deep-black);
+  color: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::selection { background: var(--ags-mid); color: var(--white); }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--deep-black); }
+::-webkit-scrollbar-thumb { background: var(--ags-mid); border-radius: 3px; }
+
+/* ============================================
+   SMOKE CANVAS (Full Site Background)
+   ============================================ */
+#smoke-canvas {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+
+/* ============================================
+   CINEMATIC OPENING
+   ============================================ */
+.cinematic-intro {
+  position: fixed; inset: 0;
+  z-index: 99999;
+  background: var(--deep-black);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.cinematic-intro.done {
+  opacity: 0; visibility: hidden;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+
+.intro-smoke {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(139,0,0,0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(209,0,0,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 20%, rgba(255,77,77,0.04) 0%, transparent 50%);
+  animation: smoke-drift 10s ease-in-out infinite;
+}
+@keyframes smoke-drift {
+  0%, 100% { transform: translateX(0) scale(1) rotate(0deg); }
+  25% { transform: translateX(30px) scale(1.05) rotate(1deg); }
+  50% { transform: translateX(-20px) scale(0.95) rotate(-0.5deg); }
+  75% { transform: translateX(15px) scale(1.02) rotate(0.5deg); }
+}
+
+.intro-glow {
+  position: absolute; width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(139,0,0,0.3) 0%, rgba(209,0,0,0.1) 40%, transparent 70%);
+  border-radius: 50%;
+  animation: intro-glow-pulse 2s ease-in-out infinite;
+  opacity: 0; transition: opacity 1s ease;
+}
+.intro-glow.active { opacity: 1; }
+@keyframes intro-glow-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.4); opacity: 0.9; }
+}
+
+.light-streak {
+  position: absolute; height: 2px;
+  background: linear-gradient(90deg, transparent, #8B0000, #D10000, #FF4D4D, #D10000, #8B0000, transparent);
+  opacity: 0;
+  box-shadow: 0 0 30px rgba(209,0,0,0.6), 0 0 60px rgba(139,0,0,0.3);
+}
+.light-streak.left-right {
+  top: 42%; left: -100%; width: 100%;
+  animation: streak-lr 1.5s ease-out 1.5s forwards;
+}
+.light-streak.right-left {
+  top: 58%; right: -100%; width: 100%;
+  animation: streak-rl 1.5s ease-out 2s forwards;
+}
+.light-streak.top-bottom {
+  left: 50%; top: -100%; width: 2px; height: 100%;
+  background: linear-gradient(180deg, transparent, #8B0000, #D10000, #FF4D4D, #D10000, #8B0000, transparent);
+  animation: streak-tb 1.5s ease-out 2.5s forwards;
+}
+@keyframes streak-lr {
+  0% { left: -100%; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { left: 100%; opacity: 0; }
+}
+@keyframes streak-rl {
+  0% { right: -100%; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { right: 100%; opacity: 0; }
+}
+@keyframes streak-tb {
+  0% { top: -100%; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { top: 100%; opacity: 0; }
+}
+
+.intro-logo {
+  width: 220px; height: 220px;
+  opacity: 0; transform: scale(0.8);
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 2; position: relative;
+}
+.intro-logo.visible { opacity: 1; transform: scale(1); }
+.intro-logo.grow { transform: scale(1.15); transition: transform 1.5s cubic-bezier(0.22, 1, 0.36, 1); }
+.intro-logo img { width: 100%; height: 100%; object-fit: contain; }
+
+.intro-text-container {
+  position: absolute; display: flex;
+  align-items: center; justify-content: center;
+  gap: 1rem; opacity: 0; z-index: 2;
+}
+.intro-text-container.show { opacity: 1; transition: opacity 0.8s ease; }
+.intro-word {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900; letter-spacing: -0.03em;
+  color: var(--white); opacity: 0;
+}
+.intro-word.from-left { transform: translateX(-120px); animation: slide-from-left 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.intro-word.from-right { transform: translateX(120px); animation: slide-from-right 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.intro-word.from-top { transform: translateY(-100px); animation: slide-from-top 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+@keyframes slide-from-left { to { opacity: 1; transform: translateX(0); } }
+@keyframes slide-from-right { to { opacity: 1; transform: translateX(0); } }
+@keyframes slide-from-top { to { opacity: 1; transform: translateY(0); } }
+
+/* ============================================
+   HERO (Post-Intro)
+   ============================================ */
+.hero-main {
+  position: relative; min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  z-index: 1; opacity: 0;
+  transition: opacity 1s ease 0.5s;
+}
+.hero-main.visible { opacity: 1; }
+
+.section-watermark {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw; height: 80vw;
+  max-width: 700px; max-height: 700px;
+  opacity: 0.04; z-index: 0; pointer-events: none;
+}
+.section-watermark img { width: 100%; height: 100%; object-fit: contain; }
+
+.hero-logo {
+  width: 160px; height: 160px;
+  margin-bottom: 2rem; position: relative; z-index: 2;
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hero-logo img { width: 100%; height: 100%; object-fit: contain; }
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+  font-weight: 800; letter-spacing: -0.03em; line-height: 1.05;
+  margin-bottom: 1.5rem; position: relative; z-index: 2;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  opacity: 0; transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+}
+.hero-title.visible { opacity: 1; transform: translateY(0); }
+
+.hero-tagline {
+  font-family: var(--font-heading);
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 1.5rem; position: relative; z-index: 2;
+  opacity: 0; transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.5s;
+}
+.hero-tagline.visible { opacity: 1; transform: translateY(0); }
+
+.hero-subtitle {
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  color: var(--white-dim); max-width: 550px;
+  margin: 0 auto 2.5rem; line-height: 1.7;
+  position: relative; z-index: 2;
+  opacity: 0; transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.7s;
+}
+.hero-subtitle.visible { opacity: 1; transform: translateY(0); }
+
+.hero-buttons {
+  display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+  position: relative; z-index: 2;
+  opacity: 0; transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.9s;
+}
+.hero-buttons.visible { opacity: 1; transform: translateY(0); }
+
+/* ============================================
+   BUTTONS - AGS GRADIENT ONLY
+   ============================================ */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-heading); font-weight: 600; font-size: 0.9rem;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  text-decoration: none; border-radius: 8px;
+  cursor: pointer; transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border: none; position: relative; overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--ags-gradient);
+  color: var(--white);
+  box-shadow: 0 4px 30px rgba(139, 0, 0, 0.4), 0 0 0 1px rgba(209, 0, 0, 0.3);
+}
+.btn-primary::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--ags-gradient-hover);
+  opacity: 0; transition: opacity 0.4s;
+}
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 40px rgba(209, 0, 0, 0.6), 0 0 0 1px rgba(255, 77, 77, 0.5), 0 0 60px rgba(209, 0, 0, 0.2);
+}
+.btn-primary span { position: relative; z-index: 1; }
+
+.btn-secondary {
+  background: transparent; color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+}
+.btn-secondary:hover {
+  border-color: var(--ags-mid); color: var(--ags-bright);
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(209, 0, 0, 0.2);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 1000; padding: 1rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(-100%); opacity: 0;
+}
+.header.visible {
+  transform: translateY(0); opacity: 1;
+  background: rgba(8, 8, 8, 0.92);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 0 40px rgba(139, 0, 0, 0.15);
+}
+
+.header-logo-nav {
+  display: flex; align-items: center; gap: 0.75rem;
+  text-decoration: none;
+}
+.header-logo-nav img { width: 36px; height: 36px; object-fit: contain; }
+.header-logo-text {
+  font-family: var(--font-heading); font-weight: 700; font-size: 1rem;
+  color: var(--white); letter-spacing: 0.05em;
+}
+.header-logo-text span {
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.header-nav { display: flex; gap: 0.3rem; list-style: none; }
+.header-nav a {
+  color: var(--white-dim); text-decoration: none; font-size: 0.85rem;
+  font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase;
+  padding: 0.5rem 1rem; border-radius: 6px; transition: all 0.3s; position: relative;
+}
+.header-nav a::after {
+  content: ''; position: absolute; bottom: 0; left: 50%;
+  width: 0; height: 2px; background: var(--ags-mid);
+  transition: all 0.3s; transform: translateX(-50%);
+  box-shadow: 0 0 10px var(--ags-mid);
+}
+.header-nav a:hover { color: var(--white); }
+.header-nav a:hover::after { width: 60%; }
+.header-cta { padding: 0.6rem 1.5rem; font-size: 0.8rem; }
+.mobile-menu-btn { display: none; background: none; border: none; color: var(--white); font-size: 1.5rem; cursor: pointer; }
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section { position: relative; z-index: 2; padding: 6rem 2rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+
+.section-label {
+  font-family: var(--font-heading); font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;
+}
+.section-label::before {
+  content: ''; width: 30px; height: 2px;
+  background: var(--ags-gradient);
+  box-shadow: 0 0 10px rgba(209, 0, 0, 0.5);
+}
+
+.section-title {
+  font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.02em;
+}
+.section-title .red {
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.section-desc { color: var(--white-dim); font-size: 1.05rem; line-height: 1.8; max-width: 600px; }
+
+/* ============================================
+   WHO WE ARE
+   ============================================ */
+.who-we-are { background: linear-gradient(180deg, var(--deep-black) 0%, var(--section-black) 100%); }
+.who-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.who-text p { color: var(--white-dim); font-size: 1.05rem; line-height: 1.9; }
+.who-visual { position: relative; }
+.who-visual-card {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: 20px;
+  padding: 2.5rem; position: relative; overflow: hidden;
+}
+.who-visual-card::before {
+  content: ''; position: absolute; top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(139,0,0,0.1) 0%, transparent 60%);
+  animation: rotate-slow 20s linear infinite;
+}
+@keyframes rotate-slow { to { transform: rotate(360deg); } }
+.who-visual-card-content { position: relative; z-index: 1; }
+.who-visual-card h3 {
+  font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700;
+  margin-bottom: 0.75rem;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.who-visual-card p { color: var(--white-dim); line-height: 1.7; font-size: 0.95rem; }
+
+/* ============================================
+   PLANS
+   ============================================ */
+.plans-section { background: var(--section-black); position: relative; }
+.plans-section::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(139,0,0,0.08) 0%, transparent 60%);
+}
+.plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; position: relative; z-index: 1; }
+
+.plan-card {
+  background: var(--card-bg); border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 20px; padding: 2.5rem; transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative; overflow: hidden;
+}
+.plan-card.popular {
+  border-color: var(--ags-mid);
+  box-shadow: 0 0 60px rgba(139, 0, 0, 0.2), inset 0 0 60px rgba(209, 0, 0, 0.05);
+  transform: scale(1.05); z-index: 2;
+}
+.plan-card.popular::before {
+  content: 'MOST POPULAR'; position: absolute; top: 0; right: 0;
+  background: var(--ags-gradient);
+  color: var(--white); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+  padding: 0.5rem 1.25rem; border-bottom-left-radius: 12px;
+  font-family: var(--font-heading);
+}
+.plan-card:hover { border-color: var(--glass-border); transform: translateY(-10px); box-shadow: 0 30px 80px rgba(0,0,0,0.4); }
+.plan-card.popular:hover { transform: scale(1.05) translateY(-10px); }
+.plan-card h3 {
+  font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.plan-features { list-style: none; margin-bottom: 1.5rem; }
+.plan-features li {
+  padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.03);
+  display: flex; align-items: center; gap: 0.75rem;
+  font-size: 0.9rem; color: var(--white-dim);
+}
+.plan-features li:last-child { border-bottom: none; }
+.plan-features li::before {
+  content: '✓';
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  font-weight: 700; font-size: 1rem;
+}
+.plan-card .btn { width: 100%; justify-content: center; }
+
+/* ============================================
+   SERVICES
+   ============================================ */
+.services-section { background: var(--deep-black); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+
+.service-card {
+  background: var(--card-bg); border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px; padding: 2rem; transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative; overflow: hidden; cursor: default;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+  background: var(--ags-gradient);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover {
+  border-color: var(--glass-border); transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(139, 0, 0, 0.1);
+}
+.service-card h3 {
+  font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700;
+  margin-bottom: 0.75rem;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.service-card p { color: var(--white-dim); font-size: 0.9rem; line-height: 1.7; }
+
+/* ============================================
+   BOOK A CALL
+   ============================================ */
+.booking-section { background: linear-gradient(180deg, var(--section-black) 0%, var(--deep-black) 100%); }
+.booking-card {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: 24px;
+  padding: 3rem; max-width: 900px; margin: 3rem auto 0;
+  text-align: center; position: relative; overflow: hidden;
+}
+.booking-card::before {
+  content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(139,0,0,0.15) 0%, transparent 70%);
+}
+.booking-card h3 {
+  font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700;
+  margin-bottom: 0.5rem; position: relative; z-index: 1;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.booking-card > p { color: var(--white-dim); margin-bottom: 2rem; position: relative; z-index: 1; }
+.calendar-embed {
+  position: relative; z-index: 1;
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px; padding: 2rem; min-height: 500px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ============================================
+   CONTACT
+   ============================================ */
+.contact-section { background: linear-gradient(180deg, var(--deep-black) 0%, var(--section-black) 100%); position: relative; }
+.contact-section::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(139,0,0,0.06) 0%, transparent 60%);
+}
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; position: relative; z-index: 1; }
+
+.contact-form {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: 20px; padding: 2.5rem;
+}
+.form-group { margin-bottom: 1.25rem; }
+.form-group label {
+  display: block; font-size: 0.8rem; font-weight: 500;
+  margin-bottom: 0.5rem; color: var(--white-dim);
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 0.85rem 1rem;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; color: var(--white);
+  font-family: var(--font-body); font-size: 0.95rem; transition: all 0.3s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: none; border-color: var(--ags-mid);
+  box-shadow: 0 0 20px rgba(139, 0, 0, 0.15);
+  background: rgba(255,255,255,0.05);
+}
+.form-group textarea { min-height: 100px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact-form-buttons { display: flex; gap: 1rem; margin-top: 1.5rem; }
+.contact-form-buttons .btn { flex: 1; justify-content: center; }
+
+.contact-info { padding-top: 1rem; }
+.contact-info-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+.contact-info-icon {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, rgba(139,0,0,0.15), rgba(209,0,0,0.05));
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(209,0,0,0.2); flex-shrink: 0;
+}
+.contact-info-icon svg { width: 20px; height: 20px; stroke: var(--ags-bright); }
+.contact-info-text h4 { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; margin-bottom: 0.2rem; }
+.contact-info-text p { color: var(--white-dim); font-size: 0.9rem; }
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  background: var(--deep-black); border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 3rem 2rem 2rem; position: relative; overflow: hidden;
+}
+.footer-watermark {
+  position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%);
+  width: 300px; height: 300px; opacity: 0.03; pointer-events: none;
+}
+.footer-watermark img { width: 100%; height: 100%; object-fit: contain; }
+.footer-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+.footer-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; }
+.footer-brand { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
+.footer-brand img { width: 32px; height: 32px; object-fit: contain; }
+.footer-brand h3 { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; }
+.footer-brand h3 span {
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.footer-about p { color: var(--white-dim); font-size: 0.85rem; line-height: 1.7; max-width: 280px; }
+.footer-col h4 { font-family: var(--font-heading); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; color: var(--white); }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 0.6rem; }
+.footer-col a { color: var(--white-dim); text-decoration: none; font-size: 0.85rem; transition: all 0.3s; display: inline-block; }
+.footer-col a:hover {
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  transform: translateX(3px);
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.5rem;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+}
+.footer-bottom p { color: var(--white-dim); font-size: 0.8rem; }
+.footer-tagline { font-family: var(--font-heading); font-size: 0.85rem; color: var(--white-dim); }
+.footer-tagline span {
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+/* ============================================
+   ANIMATED SCROLL WORDS
+   ============================================ */
+.scroll-word-section {
+  overflow: hidden; padding: 4rem 0; position: relative;
+}
+.scroll-word {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 900; white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(209, 0, 0, 0.3);
+  letter-spacing: -0.03em; line-height: 1;
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+.scroll-word.filled {
+  -webkit-text-stroke: 0;
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  opacity: 0.12;
+}
+
+/* ============================================
+   REVEAL ANIMATIONS
+   ============================================ */
+.reveal { opacity: 0; transform: translateY(50px); transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-slide-left { opacity: 0; transform: translateX(-60px); transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal-slide-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-slide-right { opacity: 0; transform: translateX(60px); transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal-slide-right.visible { opacity: 1; transform: translateX(0); }
+.reveal-zoom { opacity: 0; transform: scale(0.85); transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal-zoom.visible { opacity: 1; transform: scale(1); }
+.reveal-delay-1 { transition-delay: 0.15s; }
+.reveal-delay-2 { transition-delay: 0.3s; }
+.reveal-delay-3 { transition-delay: 0.45s; }
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+.mobile-menu {
+  position: fixed; inset: 0; background: rgba(8, 8, 8, 0.98);
+  backdrop-filter: blur(20px); z-index: 999;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem;
+  transform: translateX(100%); transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mobile-menu.open { transform: translateX(0); }
+.mobile-menu a { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 600; color: var(--white); text-decoration: none; transition: color 0.3s; }
+.mobile-menu a:hover {
+  background: var(--ags-gradient);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.mobile-menu-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--white); font-size: 2rem; cursor: pointer; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .who-content { grid-template-columns: 1fr; }
+  .plans-grid { grid-template-columns: 1fr; }
+  .plan-card.popular { transform: none; }
+  .plan-card.popular:hover { transform: translateY(-10px); }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-top { flex-direction: column; }
+}
+@media (max-width: 768px) {
+  .header-nav { display: none; }
+  .header-cta { display: none; }
+  .mobile-menu-btn { display: block; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-buttons { flex-direction: column; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 300px; justify-content: center; }
+  .intro-text-container { flex-direction: column; gap: 0.5rem; }
+}
+
+/* Logo glow effect for seamless blending */
+.intro-logo img, .hero-logo img, .header-logo-nav img, .footer-brand img {
+  filter: drop-shadow(0 0 20px rgba(209, 0, 0, 0.3)) drop-shadow(0 0 40px rgba(139, 0, 0, 0.15));
+}
+.section-watermark img {
+  filter: drop-shadow(0 0 30px rgba(209, 0, 0, 0.08));
+}
+
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<!-- ============================================
+   CINEMATIC OPENING ANIMATION
+   ============================================ -->
+<div class="cinematic-intro" id="cinematicIntro">
+  <div class="intro-smoke"></div>
+  <div class="intro-glow" id="introGlow"></div>
+  <div class="light-streak left-right" id="streak1"></div>
+  <div class="light-streak right-left" id="streak2"></div>
+  <div class="light-streak top-bottom" id="streak3"></div>
+
+  <div class="intro-logo" id="introLogo">
+    <img src="logo.png" alt="Apex Growth Solutions Logo">
+  </div>
+
+  <div class="intro-text-container" id="introText" style="top: 62%;">
+    <span class="intro-word from-left" id="wordApex" style="animation-delay: 4.5s;">APEX</span>
+    <span class="intro-word from-right" id="wordGrowth" style="animation-delay: 5.2s;">GROWTH</span>
+  </div>
+  <div class="intro-text-container" id="introText2" style="top: 72%;">
+    <span class="intro-word from-top" id="wordSolutions" style="animation-delay: 5.9s;">SOLUTIONS</span>
+  </div>
+</div>
+
+<!-- ============================================
+   SMOKE CANVAS (Full Site Background)
+   ============================================ -->
+<canvas id="smoke-canvas"></canvas>
+
+<!-- ============================================
+   STICKY HEADER
+   ============================================ -->
+<header class="header" id="header">
+  <a href="#home" class="header-logo-nav">
+    <img src="logo.png" alt="AGS">
+    <span class="header-logo-text">APEX <span>GROWTH</span></span>
+  </a>
+  <nav>
+    <ul class="header-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Who We Are</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#booking">Book A Call</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#booking" class="btn btn-primary header-cta"><span>Book a Call</span></a>
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+  <a href="#home" onclick="toggleMobileMenu()">Home</a>
+  <a href="#about" onclick="toggleMobileMenu()">Who We Are</a>
+  <a href="#plans" onclick="toggleMobileMenu()">Plans</a>
+  <a href="#services" onclick="toggleMobileMenu()">Services</a>
+  <a href="#booking" onclick="toggleMobileMenu()">Book A Call</a>
+  <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+</div>
+
+<!-- ============================================
+   HERO SECTION
+   ============================================ -->
+<section class="hero-main" id="home">
+  <div class="section-watermark">
+    <img src="logo.png" alt="">
+  </div>
+
+  <div class="hero-logo" id="heroLogo">
+    <img src="logo.png" alt="Apex Growth Solutions Logo">
+  </div>
+
+  <h1 class="hero-title" id="heroTitle">APEX GROWTH SOLUTIONS</h1>
+  <p class="hero-tagline" id="heroTagline">OUTSOURCE YOUR GROWTH. GENERATE MORE LEADS. CLOSE MORE DEALS.</p>
+  <p class="hero-subtitle" id="heroSubtitle">Professional cold calling, appointment setting, lead generation, and outsourced sales solutions built to help businesses scale faster.</p>
+  <div class="hero-buttons" id="heroButtons">
+    <a href="#booking" class="btn btn-primary"><span>Book a Free Strategy Call</span></a>
+    <a href="#contact" class="btn btn-secondary">Get Started</a>
+  </div>
+</section>
+
+<!-- ============================================
+   ANIMATED SCROLL WORDS
+   ============================================ -->
+<div class="scroll-word-section">
+  <div class="scroll-word" data-speed="0.3">APEX — GROWTH — SOLUTIONS — APEX — GROWTH — SOLUTIONS — </div>
+</div>
+
+<!-- ============================================
+   WHO WE ARE
+   ============================================ -->
+<section class="section who-we-are" id="about">
+  <div class="section-watermark">
+    <img src="logo.png" alt="">
+  </div>
+  <div class="section-inner">
+    <div class="who-content">
+      <div class="who-text reveal-slide-left">
+        <div class="section-label">Who We Are</div>
+        <h2 class="section-title">Your <span class="red">Outsourced Growth Partner</span></h2>
+        <p>Apex Growth Solutions is an outsourced call center and lead generation company helping businesses reach more customers, generate qualified opportunities, and build predictable growth. Our team becomes an extension of your business, handling outreach, appointment setting, follow-up, and customer engagement with professionalism and consistency.</p>
+      </div>
+      <div class="who-visual reveal-slide-right reveal-delay-2">
+        <div class="who-visual-card">
+          <div class="who-visual-card-content">
+            <h3>Trusted Across Industries</h3>
+            <p>We serve Solar, Roofing, Insurance, and Real Estate businesses across the United States with elite outsourced sales teams.</p>
+            <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <span style="background: linear-gradient(135deg, rgba(139,0,0,0.15), rgba(209,0,0,0.1)); border: 1px solid rgba(209,0,0,0.2); padding: 0.4rem 0.9rem; border-radius: 8px; font-size: 0.75rem; font-weight: 500;">Solar</span>
+              <span style="background: linear-gradient(135deg, rgba(139,0,0,0.15), rgba(209,0,0,0.1)); border: 1px solid rgba(209,0,0,0.2); padding: 0.4rem 0.9rem; border-radius: 8px; font-size: 0.75rem; font-weight: 500;">Roofing</span>
+              <span style="background: linear-gradient(135deg, rgba(139,0,0,0.15), rgba(209,0,0,0.1)); border: 1px solid rgba(209,0,0,0.2); padding: 0.4rem 0.9rem; border-radius: 8px; font-size: 0.75rem; font-weight: 500;">Insurance</span>
+              <span style="background: linear-gradient(135deg, rgba(139,0,0,0.15), rgba(209,0,0,0.1)); border: 1px solid rgba(209,0,0,0.2); padding: 0.4rem 0.9rem; border-radius: 8px; font-size: 0.75rem; font-weight: 500;">Real Estate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="scroll-word-section">
+  <div class="scroll-word filled" data-speed="-0.2">LEADS — APPOINTMENTS — RESULTS — LEADS — APPOINTMENTS — RESULTS — </div>
+</div>
+
+<!-- ============================================
+   PLANS
+   ============================================ -->
+<section class="section plans-section" id="plans">
+  <div class="section-watermark">
+    <img src="logo.png" alt="">
+  </div>
+  <div class="section-inner">
+    <div class="text-center reveal" style="text-align: center; margin-bottom: 1rem;">
+      <div class="section-label" style="justify-content: center;">Plans</div>
+      <h2 class="section-title">Choose Your <span class="red">Growth Team</span></h2>
+      <p class="section-desc" style="margin: 0 auto;">Request a custom quote tailored to your business needs</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card reveal-zoom">
+        <h3>Part-Time Team</h3>
+        <ul class="plan-features">
+          <li>Experienced Cold Caller</li>
+          <li>Client Success Manager</li>
+          <li>Quality Control Management</li>
+          <li>Weekly Reports</li>
+          <li>Weekly Team Meetings</li>
+          <li>ReadyMode Dialer</li>
+          <li>IT Support</li>
+          <li>Team Leader</li>
+        </ul>
+        <a href="#booking" class="btn btn-secondary">Request a Call</a>
+      </div>
+      <div class="plan-card reveal-zoom reveal-delay-1">
+        <h3>Full-Time Team</h3>
+        <ul class="plan-features">
+          <li>Experienced Full-Time Cold Caller</li>
+          <li>Client Success Manager</li>
+          <li>Quality Control Management</li>
+          <li>Weekly Reports</li>
+          <li>Weekly Team Meetings</li>
+          <li>ReadyMode Dialer</li>
+          <li>IT Support</li>
+          <li>Team Leader</li>
+        </ul>
+        <a href="#booking" class="btn btn-secondary">Request a Call</a>
+      </div>
+      <div class="plan-card popular reveal-zoom reveal-delay-2">
+        <h3>Elite Growth Team</h3>
+        <ul class="plan-features">
+          <li>Experienced Cold Caller</li>
+          <li>Client Success Manager</li>
+          <li>Quality Control Management</li>
+          <li>Weekly Reports</li>
+          <li>Weekly Team Meetings</li>
+          <li>ReadyMode Dialer</li>
+          <li>IT Support</li>
+          <li>Team Leader</li>
+          <li>15,000 Records Data Pulling</li>
+          <li>15,000 Records Skip Tracing</li>
+        </ul>
+        <a href="#booking" class="btn btn-primary"><span>Request a Call</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="scroll-word-section">
+  <div class="scroll-word" data-speed="0.25">SCALE — DOMINATE — CONQUER — SCALE — DOMINATE — CONQUER — </div>
+</div>
+
+<!-- ============================================
+   SERVICES
+   ============================================ -->
+<section class="section services-section" id="services">
+  <div class="section-watermark">
+    <img src="logo.png" alt="">
+  </div>
+  <div class="section-inner">
+    <div class="text-center reveal" style="text-align: center; margin-bottom: 1rem;">
+      <div class="section-label" style="justify-content: center;">Services</div>
+      <h2 class="section-title">What We <span class="red">Do</span></h2>
+      <p class="section-desc" style="margin: 0 auto;">Elite solutions designed to accelerate your business growth</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal-slide-left">
+        <h3>Data Intelligence & Prospect Building</h3>
+        <p>Targeted data solutions built around your goals, providing high-quality prospect lists that improve outreach performance and campaign success.</p>
+      </div>
+      <div class="service-card reveal-slide-right reveal-delay-1">
+        <h3>Cold Calling & Appointment Setting</h3>
+        <p>Professional outreach specialists who engage prospects, qualify opportunities, and schedule appointments directly into your sales pipeline.</p>
+      </div>
+      <div class="service-card reveal-slide-left reveal-delay-2">
+        <h3>Real Estate Acquisition & Disposition</h3>
+        <p>End-to-end support for sourcing opportunities, negotiating deals, and efficiently moving properties through the acquisition and disposition process.</p>
+      </div>
+      <div class="service-card reveal-slide-right">
+        <h3>Skip Tracing</h3>
+        <p>Advanced search solutions that locate hard-to-find property owners and prospects with accurate and updated contact information.</p>
+      </div>
+      <div class="service-card reveal-slide-left reveal-delay-1">
+        <h3>24/7 IT & Operational Support</h3>
+        <p>Continuous monitoring and technical assistance that keeps campaigns running smoothly around the clock.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="scroll-word-section">
+  <div class="scroll-word filled" data-speed="-0.15">OUTSOURCE — GROW — SCALE — OUTSOURCE — GROW — SCALE — </div>
+</div>
+
+<!-- ============================================
+   BOOK A CALL
+   ============================================ -->
+<section class="section booking-section" id="booking">
+  <div class="section-watermark">
+    <img src="logo.png" alt="">
+  </div>
+  <div class="section-inner">
+    <div class="text-center reveal" style="text-align: center; margin-bottom: 1rem;">
+      <div class="section-label" style="justify-content: center;">Schedule</div>
+      <h2 class="section-title">Book Your Free <span class="red">30-Minute Strategy Session</span></h2>
+      <p class="section-desc" style="margin: 0 auto;">Meet with an AGS growth specialist to discuss your goals, challenges, and opportunities for scaling your business.</p>
+    </div>
+    <div class="booking-card reveal-zoom">
+      <h3>Book Your Free 30-Minute Strategy Session</h3>
+      <p>Select a time that works for you. Google Meet link automatically generated.</p>
+      <div class="calendar-embed">
+        <div style="text-align:center;">
+          <p style="font-size:1.1rem; margin-bottom:1rem; color:var(--white);">📅 Google Calendar Scheduling</p>
+          <p style="color:var(--white-dim); margin-bottom:1.5rem;">To embed your Google Calendar, replace this section with your Google Calendar Appointment Scheduling iframe code.</p>
+          <p style="font-size:0.85rem; color:var(--white-dim); margin-bottom:1.5rem;">Go to Google Calendar → Appointment Schedules → Get Embed Code</p>
+          <a href="https://calendar.google.com/calendar/u/0/appointments" target="_blank" class="btn btn-primary" style="margin-top:0.5rem;"><span>Schedule My Free Call</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+   CONTACT
+   ============================================ -->
+<section class="section contact-section" id="contact">
+  <div class="section-watermark">
+    <img src="logo.png" alt="">
+  </div>
+  <div class="section-inner">
+    <div class="text-center reveal" style="text-align: center; margin-bottom: 1rem;">
+      <div class="section-label" style="justify-content: center;">Contact</div>
+      <h2 class="section-title">Ready to <span class="red">Scale?</span></h2>
+      <p class="section-desc" style="margin: 0 auto;">Let us discuss how Apex Growth Solutions can help your business generate more opportunities and close more deals.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form reveal-slide-left">
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your company name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry">
+              <option value="">Select your industry</option>
+              <option value="solar">Solar</option>
+              <option value="roofing">Roofing</option>
+              <option value="insurance">Insurance</option>
+              <option value="real-estate">Real Estate</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your goals..."></textarea>
+          </div>
+          <div class="contact-form-buttons">
+            <button type="submit" class="btn btn-primary"><span>Book a Call</span></button>
+            <button type="button" class="btn btn-secondary" onclick="alert('Thank you! We will send you a detailed custom proposal within 24 hours.')">Get a Custom Proposal</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-info reveal-slide-right reveal-delay-2">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>Phone</h4>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>Email</h4>
+            <p>growth@apexsolutions.com</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>Location</h4>
+            <p>United States — Remote Nationwide</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <h4>Hours</h4>
+            <p>24/7 Operations & Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+   FOOTER
+   ============================================ -->
+<footer class="footer">
+  <div class="footer-watermark">
+    <img src="logo.png" alt="">
+  </div>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="logo.png" alt="AGS">
+          <h3>APEX <span>GROWTH</span></h3>
+        </div>
+        <p class="footer-about">Your trusted outsourced growth partner. We help businesses scale faster through elite cold calling, lead generation, and sales support.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Who We Are</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Cold Calling</a></li>
+          <li><a href="#services">Lead Generation</a></li>
+          <li><a href="#services">Data Solutions</a></li>
+          <li><a href="#services">Skip Tracing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#services">Solar</a></li>
+          <li><a href="#services">Roofing</a></li>
+          <li><a href="#services">Insurance</a></li>
+          <li><a href="#services">Real Estate</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Apex Growth Solutions. All rights reserved.</p>
+      <p class="footer-tagline">APEX GROWTH SOLUTIONS — Your Trusted <span>Outsourced Growth Partner</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================
+   SCRIPTS
+   ============================================ -->
+<script>
+// ============================================
+// SMOKE CANVAS - AGS GRADIENT COLORS ONLY
+// ============================================
+const smokeCanvas = document.getElementById('smoke-canvas');
+const smokeCtx = smokeCanvas.getContext('2d');
+let smokeParticles = [];
+
+function resizeSmokeCanvas() {
+  smokeCanvas.width = window.innerWidth;
+  smokeCanvas.height = window.innerHeight;
+}
+resizeSmokeCanvas();
+window.addEventListener('resize', resizeSmokeCanvas);
+
+class SmokeParticle {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * smokeCanvas.width;
+    this.y = Math.random() * smokeCanvas.height;
+    this.size = Math.random() * 150 + 80;
+    this.speedX = (Math.random() - 0.5) * 0.15;
+    this.speedY = (Math.random() - 0.5) * 0.08;
+    this.opacity = Math.random() * 0.03 + 0.01;
+    this.growth = Math.random() * 0.1 + 0.02;
+    const colorChoice = Math.random();
+    if (colorChoice > 0.7) this.color = '139, 0, 0';      // dark red
+    else if (colorChoice > 0.4) this.color = '209, 0, 0'; // mid red
+    else this.color = '30, 30, 30';                         // dark gray
+  }
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    this.size += this.growth;
+    if (this.x < -200 || this.x > smokeCanvas.width + 200 || this.y < -200 || this.y > smokeCanvas.height + 200) {
+      this.reset();
+      this.y = smokeCanvas.height + 100;
+    }
+  }
+  draw() {
+    smokeCtx.beginPath();
+    const gradient = smokeCtx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
+    gradient.addColorStop(0, 'rgba(' + this.color + ',' + this.opacity + ')');
+    gradient.addColorStop(0.5, 'rgba(' + this.color + ',' + (this.opacity * 0.5) + ')');
+    gradient.addColorStop(1, 'rgba(' + this.color + ',0)');
+    smokeCtx.fillStyle = gradient;
+    smokeCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    smokeCtx.fill();
+  }
+}
+
+for (let i = 0; i < 25; i++) smokeParticles.push(new SmokeParticle());
+
+function animateSmoke() {
+  smokeCtx.clearRect(0, 0, smokeCanvas.width, smokeCanvas.height);
+  smokeParticles.forEach(p => { p.update(); p.draw(); });
+  requestAnimationFrame(animateSmoke);
+}
+animateSmoke();
+
+// ============================================
+// CINEMATIC OPENING SEQUENCE
+// ============================================
+const intro = document.getElementById('cinematicIntro');
+const introLogo = document.getElementById('introLogo');
+const introGlow = document.getElementById('introGlow');
+const heroMain = document.getElementById('home');
+const heroTitle = document.getElementById('heroTitle');
+const heroTagline = document.getElementById('heroTagline');
+const heroSubtitle = document.getElementById('heroSubtitle');
+const heroButtons = document.getElementById('heroButtons');
+
+setTimeout(() => { introLogo.classList.add('visible'); }, 300);
+setTimeout(() => {
+  introLogo.classList.add('grow');
+  introGlow.classList.add('active');
+}, 3000);
+setTimeout(() => {
+  intro.classList.add('done');
+  heroMain.classList.add('visible');
+  setTimeout(() => heroTitle.classList.add('visible'), 300);
+  setTimeout(() => heroTagline.classList.add('visible'), 500);
+  setTimeout(() => heroSubtitle.classList.add('visible'), 700);
+  setTimeout(() => heroButtons.classList.add('visible'), 900);
+}, 7000);
+
+// ============================================
+// SCROLL: HEADER + LOGO SHRINK
+// ============================================
+const header = document.getElementById('header');
+const heroLogo = document.getElementById('heroLogo');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.pageYOffset;
+  if (scrollY > 100) header.classList.add('visible');
+  else header.classList.remove('visible');
+
+  const heroRect = heroMain.getBoundingClientRect();
+  if (heroRect.bottom < 150) {
+    heroLogo.style.opacity = '0';
+    heroLogo.style.transform = 'scale(0.5)';
+  } else {
+    heroLogo.style.opacity = '1';
+    heroLogo.style.transform = 'scale(1)';
+  }
+});
+
+// ============================================
+// MOBILE MENU
+// ============================================
+function toggleMobileMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ============================================
+// SCROLL REVEAL
+// ============================================
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { 
+    if (entry.isIntersecting) entry.target.classList.add('visible'); 
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-slide-left, .reveal-slide-right, .reveal-zoom').forEach(el => revealObserver.observe(el));
+
+// ============================================
+// SCROLL WORD PARALLAX
+// ============================================
+const scrollWords = document.querySelectorAll('.scroll-word');
+window.addEventListener('scroll', () => {
+  const scrollY = window.pageYOffset;
+  scrollWords.forEach(word => {
+    const speed = parseFloat(word.dataset.speed) || 0.3;
+    const parent = word.parentElement;
+    const offset = (scrollY - parent.offsetTop + window.innerHeight) * speed;
+    word.style.transform = 'translateX(' + offset + 'px)';
+  });
+});
+
+// ============================================
+// FORM HANDLER
+// ============================================
+function handleFormSubmit(e) {
+  e.preventDefault();
+  alert('Thank you for reaching out! Our team will contact you within 24 hours to schedule your free strategy call.');
+  e.target.reset();
+}
+
+// ============================================
+// SMOOTH SCROLL
+// ============================================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+</body>
+</html>
